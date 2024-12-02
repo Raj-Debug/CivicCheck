@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    <body>
+        <style>
+            body{
+          background-image:url();
+          background-repeat:no-repeat;
+          background-size:cover;
+          @font-face { font-family: rfont; src: url('RedditSans-ExtraBold.ttf'); } 
+      h1 {
+         font-family:rfont}
+            }
+            </style>
+            <video autoplay muted loop id="myVideo" style="z-index:0;">
+              <source src="images/Topographic Textures _ After Effects _ Topographic Design _ Topographic Map  _ Background hd - Atomic Dreams (1080p, h264, youtube).mp4" type="video/mp4">
+            </video>
+            <div id="charrt">
+            </div>
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <script type="text/javascript">
+                  google.charts.load('current', {'packages':['corechart']});
+                  google.charts.setOnLoadCallback(drawChart);
+            
+                  function drawChart() {
+            
+                    var data = google.visualization.arrayToDataTable([
+                        ['Task', 'Hours per Day'],
+                      ['Fulfilled',     83],
+                      ['Unfulfilled',     45],
+                      ['Partially Fulfilled',  101],
+                    ]);
+            
+                    var options = {
+                      title: 'Data of Manifesto points'
+                    };
+            
+                    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            
+                    chart.draw(data, options);
+                  }
+                </script>
+                    <div id="piechart" style="width: 590px; top:80px;height:330px;border:6px;border-radius:25px;"></div>
+
+                <div class="dropdown" style="position: fixed;top:450px;left:460px;background-color: aqua;size: 200px;border-radius:25px;z-index:4;position: relative;">
+                    <button style="height:50px;width:600px;border:6px;border-radius:25px;z-index:4;border-radius:25px;">Select Category</button>
+                    <div class="content">
+                        <a href="Fulfilled.html" style="border-radius:25px;width:600px;">Fulfilled</a>
+                        <a href="Partially.html" style="border-radius:25px;"> Partially Fulfilled</a>
+                        <a href="Broken.html" style="border-radius:25px;" >Unfulfilled</a>
+                </div>
+                </div>
+                <div id="info"> </div>
+                <div id="fullf">
+                <h1 style="color:rebeccapurple;z-index:3;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Fulfilled Promises</h1>
+                <ul class="boxed-list" style="width:1000px;z-index:3;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >
+          <li>Overcoming obstacles in way of development and adequate resources to all regions of J&K</li>
+          <li>Credit, capacity building and market linkage for women entrepreneurs, SHG & women farmers</li>
+          <li>150,000 Health and Wellness Centres by 2022; provision of telemedicine and diagnostic laboratory facilities</li>
+          <li>Further simplification of GST process</li>
+          <li>Expanding Ayushman Bharat to include Anganwadi workers and ASHA workers</li>
+          <li>33% women reservation in parliament and state assemblies</li>
+          <li>Simplifying procedural laws, encouraging mediation and strengthening judicial and court management systems</li>
+          <li>Developing infrastructure and connectivity in Northeasts</li>
+          <li>Government-guaranteed credit to reach Rs 1 lakh crore</li>
+          <li>FSpecial focus on tourism in within services sector</li>
+        </ul>
+    </div>
+</body>
+</html>

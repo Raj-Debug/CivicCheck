@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    <body>
+        <style>
+            body{
+          background-image:url();
+          background-repeat:no-repeat;
+          background-size:cover;
+            }
+            </style>
+            <video autoplay muted loop id="myVideo" style="z-index:0;">
+              <source src="images/Topographic Textures _ After Effects _ Topographic Design _ Topographic Map  _ Background hd - Atomic Dreams (1080p, h264, youtube).mp4" type="video/mp4">
+            </video>
+            <head>
+              <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+              <script type="text/javascript">
+                google.charts.load("current", {packages:['corechart']});
+                google.charts.setOnLoadCallback(drawChart);
+                function drawChart() {
+                  var data = google.visualization.arrayToDataTable([
+                    ["Element", "Votes", { role: "style" } ],
+                    ["Ramvir Singh Bidhuri(BJP)",692832, "#ffa500"],
+                    ["Sahiram Pehalwan(AAP)", 568499, "#add8e6"],
+                    ["NOTA",5961, "white"],
+                  ]);
+            
+                  var view = new google.visualization.DataView(data);
+                  view.setColumns([0, 1,
+                                   { calc: "stringify",
+                                     sourceColumn: 1,
+                                     type: "string",
+                                     role: "annotation" },
+                                   2]);
+            
+                  var options = {
+                    title:  " South Delhi Lok Sabha 2024",
+                    width:690,
+                    height: 400,
+                    bar: {groupWidth: "95%"},
+                    legend: { position: "none" },
+                  };
+                  var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+                  chart.draw(view, options);
+              }
+              </script>
+            </head>
+<div id="Delhi" style="z-index:0;">
+</div>
+<h1 style="font-family:rfont;z-index:1;position:fixed;top:52px;left:20px;color:darkred">Ramvir Singh Bidhuri</h1>
+<pre style="font-family:afont;position:fixed;top:100px;left:20px;font-size:23px;">
+Constituency:<span class="texc">North West Delhi</span>
+Party:BJP
+
+Name Enrolled as Voter in:<span class="texc">Tughlakabad (Delhi)
+constituency, at Serial no 1 in Part no 50</span>
+
+Self Profession:<span class="texc">Business & Social Service</span>
+
+Assests and Liabilities
+Assets:<span class="texc">Rs 52,64,19,941 ~52 Crore+</span>
+Liabilities:Rs<span class="texc">Rs 10,00,000 ~10 Lacs+</span>
+
+Education Details
+Category: <span class="texc">Graduate</span>
+<span class="texc">B.A. from Deshbandu Gupta Collage,
+Delhi University In 1973.</span>
+
+Tax Dues:<span class="texc">Rs 59,74,886 ~59 Lacs </span>
+Spouse Profession: <span class="texc">Business</span>
+</pre>
+<img src="images/rsbsd.jpg" style="top:50px;position:fixed;z-index:1;height:300px;width:auto;left:1260px;top:100px;border-radius:25px;">
+<div id="columnchart_values" style="width: 900px; height: 300px;z-index:1;position: relative;left:520px;top:170px;"></div>
+<img src="images/case2.png" style="top:500px;left:1300px;z-index:1;position:fixed;height:150px;width:auto">
+<p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;position:fixed;z-index:1;top:600px;left:1300px;font-size:20px;">Criminal Cases:1</p>
+
+        </body>
+        </html>

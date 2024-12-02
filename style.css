@@ -1,0 +1,374 @@
+
+
+@font-face { font-family: rfont; src: url('rfont.ttf'); }
+@font-face { font-family: afont; src: url('afont.otf'); }
+@font-face { font-family: afont1; src: url('afont1.otf'); }
+
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border-radius: 25px;
+
+}
+.dropdown button
+{
+  
+background-color: white;
+border-radius: 25px;
+padding: 10px 15px;
+border: none;
+cursor:pointer ;
+left:400px;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.dropdown .content {
+  
+  top: 100%; 
+  left: 0;    
+}
+.dropdown-right .content {
+  top: 100%; 
+  left: 50px; 
+}
+
+.dropdown-left .content {
+  top: 100%;  
+  left: -50px; 
+}
+
+.dropdown a{
+  display:block;
+  color:black;
+  text-decoration:none;
+  padding:10px 15px;
+  top: 400px;
+  border-radius: 25px;
+  font-family:afont1;
+}
+.dropdown .content
+{
+  display:none;
+  position: absolute;
+  border-radius: 25px;
+  background-color: white;
+  min-width: 100px;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+.dropdown:hover .content
+{
+  display:block;
+}
+.dropdown:hover button{
+  background-color:rgb(255, 255, 255);
+}
+.dropdown a:hover{
+  background-color:rgb(9, 111, 236);
+}
+.boxed-list {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+  width: 300px; 
+}
+
+.boxed-list li {
+  border: 1px solid #ccc;
+  border-radius: 25px; 
+  padding: 10px; 
+  margin-bottom: 10px; 
+  background-color: #f9f9f9; 
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease; 
+}
+
+.boxed-list li:hover {
+  background-color: #e0f7fa; 
+}
+#box {
+  width: 100%; 
+  height: 20vh; 
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+#info {
+  position:absolute;
+  width: 70%;
+  left:230px;
+  height: 670px; 
+  top:450px;
+  border-radius:25px;
+  background-color:aliceblue;
+
+}
+#charrt
+{
+  position:absolute;
+  width: 54%;
+  left:450px;
+  height: 360px; 
+  width:610px;
+  top:70px;
+  border-radius:25px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+}
+#piechart
+{
+  z-index: 2;
+  position:absolute;
+  width: 54%;
+  left:462px;
+  height: 400ppx; 
+  width:700px;
+  top:50px;
+  border-radius:25px;
+  background-color: rgb(255, 255, 255);
+}
+#fullf
+{
+  position:absolute;
+  top:500px;
+  left:270px;
+  z-index:3;
+}
+#Delhi
+{
+  position:fixed;
+  width:1510px;
+  left:12px;
+  height: 650px; 
+  top:70px;
+  border-radius:25px;
+  background-color:white;
+
+}
+hover.tbut
+{
+  background-color: blue;
+  
+}
+#but
+{
+  position: relative;
+  z-index:1;
+  height:40px;
+  width:86px;
+  color:black;
+  background-color:white;
+  border-radius:20px;
+  font-size:15px;
+  cursor: pointer;
+   transition: background-color 0.2s ease;
+   border:none;
+   line-height: normal;
+   text-align: center; 
+   display: inline-block;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#but:hover
+{
+  background-color:darkslateblue;
+  color:white;
+}
+#but1
+{
+  position: relative;
+  top:10px;
+  z-index:1;
+  height:40px;
+  width:86px;
+  color:black;
+  background-color:white;
+  border-radius:20px;
+  font-size:15px;
+  cursor: pointer;
+   transition: background-color 0.2s ease;
+   border:none;
+   line-height: normal;
+   text-align: center; 
+   display: inline-block;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+#but1:hover
+{
+  background-color:darkslateblue;
+  color:white;
+}
+.texc
+{
+color:blue;
+font-family: afont1;
+}
+#logh:hover
+{
+  transition: display 0.2s ease in;
+  display:none;
+}
+#calb
+{
+  position:fixed;
+  width:1510px;
+  left:12px;
+  height: 650px; 
+  top:70px;
+  border-radius:25px;
+  background-color: gray;
+  z-index: 0;
+}
+#margin
+{
+  position:fixed;
+  width:1510px;
+  left:12px;
+  height: 5px; 
+  top:390px;
+  border-radius:25px;
+  background-color: rgb(0, 0, 0);
+  z-index:1;
+}
+#margin1
+{
+  position:fixed;
+  width:5px;
+  left:503px;
+  height:650px; 
+  top:70px;
+  border-radius:25px;
+  background-color: rgb(0, 0, 0);
+  z-index:1;
+}
+#margin2
+{
+  position:fixed;
+  width:5px;
+  left:1006px;
+  height:650px; 
+  top:70px;
+  border-radius:25px;
+  background-color: rgb(0, 0, 0);
+  z-index:1;
+}
+
+
+.container {
+  position: relative;
+}
+.bjl
+{
+  display:block;
+}
+.bjinfo {
+  display: none;
+  position: absolute;
+  top: -45px;
+  left: 0px;
+  font-size:22px;
+  font-family: rfont;
+}
+.bjl:hover
+{
+  visibility: hidden;
+}
+
+.bjl:hover + .bjinfo {
+  display: block;
+  transition: display 0.2s ease-in;
+}
+
+.congl
+{
+  display:block;
+}
+.conginfo {
+  display: none;
+  position: absolute;
+  top: -45px;
+  left: 300px;
+  font-size:22px;
+  font-family: rfont;
+}
+.congl:hover
+{
+  visibility: hidden;
+}
+
+.congl:hover + .conginfo {
+  display: block;
+  transition: display 0.2s ease-in;
+}
+
+.aapl
+{
+  display:block;
+}
+.aapinfo {
+  display: none;
+  position: absolute;
+  top: -45px;
+  left: 600px;
+  font-size:22px;
+  font-family: rfont;
+}
+.aapl:hover
+{
+  visibility: hidden;
+}
+
+.aapl:hover + .aapinfo {
+  display: block;
+  transition: display 0.2s ease-in;
+}
+
+.tmcl
+{
+  display:block;
+}
+.tmcinfo {
+  display: none;
+  position: absolute;
+  top: -45px;
+  left: 900px;
+  font-size:22px;
+  font-family: rfont;
+}
+.tmcl:hover
+{
+  visibility: hidden;
+}
+
+.tmcl:hover + .tmcinfo {
+  display: block;
+  transition: display 0.2s ease-in;
+}
+
+.bjdl
+{
+  display:block;
+}
+.bjdinfo {
+  display: none;
+  position: absolute;
+  top: -45px;
+  left: 1200px;
+  font-size:22px;
+  font-family: rfont;
+}
+.bjdl:hover
+{
+  visibility: hidden;
+}
+
+.bjdl:hover + .bjdinfo {
+  display: block;
+  transition: display 0.2s ease-in;
+}

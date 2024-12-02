@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    <body>
+        <style>
+            body{
+          background-image:url();
+          background-repeat:no-repeat;
+          background-size:cover;
+            }
+            </style>
+            <video autoplay muted loop id="myVideo" style="z-index:0;">
+              <source src="images/Topographic Textures _ After Effects _ Topographic Design _ Topographic Map  _ Background hd - Atomic Dreams (1080p, h264, youtube).mp4" type="video/mp4">
+            </video>
+            <head>
+              <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+              <script type="text/javascript">
+                google.charts.load("current", {packages:['corechart']});
+                google.charts.setOnLoadCallback(drawChart);
+                function drawChart() {
+                  var data = google.visualization.arrayToDataTable([
+                    ["Element", "Votes", { role: "style" } ],
+                    ["Praveen Khandelwal(BJP)",516496, "#ffa500"],
+                    ["Jai Prakash Agarwal(INC)", 427171, "#add8e6"],
+                    ["Abul Kalam Azad(BSP)", 5829, "white"],
+                  ]);
+            
+                  var view = new google.visualization.DataView(data);
+                  view.setColumns([0, 1,
+                                   { calc: "stringify",
+                                     sourceColumn: 1,
+                                     type: "string",
+                                     role: "annotation" },
+                                   2]);
+            
+                  var options = {
+                    title: "Chandni Chowk Lok Sabha 2024",
+                    width:690,
+                    height: 400,
+                    bar: {groupWidth: "95%"},
+                    legend: { position: "none" },
+                  };
+                  var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+                  chart.draw(view, options);
+              }
+              </script>
+            </head>
+<div id="Delhi" style="z-index:0;">
+</div>
+<h1 style="font-family:rfont;z-index:1;position:fixed;top:52px;left:20px;color:darkred">Praveen Khandelwal</h1>
+<pre style="font-family:afont;position:fixed;top:100px;left:20px;font-size:23px;">
+Constituency:<span class="texc">Chandni Chowk</span>
+Party:BJP
+
+Name Enrolled as Voter in:<span class="texc">  01 Chandani 
+Chowk,at Serial no 659 in Part no 21</span>
+
+Self Profession:<span class="texc">Business, Social Public 
+life</span>
+
+Assests and Liabilities
+Assets:<span class="texc">  Rs 11,70,39,798 ~11 Crore+ </span>
+Liabilities:Rs<span class="texc"> 6,06,45,586.77 ~6 Crore+</span>
+
+Education Details
+Category: <span class="texc"> Graduate Professional</span>
+<span class="texc">LLB from Delhi University 1986,
+B.A From Ramjas College Delhi, in 1983</span>
+
+Campaign Expenditure:<span class="texc">Rs 56,26,230 ~56 Lacs</span>
+Spouse Profession: <span class="texc">Business</span>
+</pre>
+<img src="images/channels4_profile.jpg" style="top:50px;position:fixed;z-index:1;height:300px;width:auto;left:1200px;top:100px;border-radius:20px;">
+
+<div id="columnchart_values" style="width: 900px; height: 300px;z-index:1;position: relative;left:520px;top:150px;"></div>
+<img src="images/case1.png" style="top:500px;left:1300px;z-index:1;position:fixed;height:150px;width:auto;">
+<p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;position:fixed;z-index:1;top:600px;left:1300px;font-size:20px;">Criminal Cases:0</p>
+
+        </body>
+        </html>

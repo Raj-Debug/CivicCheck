@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    <body>
+      <style>
+ @font-face {
+  font-family: futura;
+  src: url(futura.ttf);
+}
+      </style>
+        <title>CivicCheck</title> 
+    <link rel="icon" href="C.jpg" type="image/x-icon" >
+     </head>
+        <style>
+            body{
+          background-image:url();
+          background-repeat:no-repeat;
+          background-size:cover;
+            }
+            </style>
+            <video autoplay muted loop id="myVideo" style="z-index:0;">
+              <source src="images/Topographic Textures _ After Effects _ Topographic Design _ Topographic Map  _ Background hd - Atomic Dreams (1080p, h264, youtube).mp4" type="video/mp4">
+            </video>
+            <div id="charrt">
+            </div>
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <script type="text/javascript">
+                  google.charts.load('current', {'packages':['corechart']});
+                  google.charts.setOnLoadCallback(drawChart);
+            
+                  function drawChart() {
+            
+                    var data = google.visualization.arrayToDataTable([
+                      ['Task', 'Hours per Day'],
+                      ['Fulfilled',     83],
+                      ['Unfulfilled',     45],
+                      ['Partially Fulfilled',  101],
+                    ]);
+            
+                    var options = {
+                      title: 'Data of Manifesto points'
+                    };
+            
+                    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            
+                    chart.draw(data, options);
+                  }
+                </script>
+                    <div id="piechart" style="width: 590px; top:80px;height:330px;border:6px;border-radius:25px;"></div>
+
+                    <div class="dropdown" style="position: fixed;top:450px;left:460px;size: 200px;border-radius:25px;z-index:4;position: relative;">
+                        <button style="height:50px;width:600px;border:6px;border-radius:25px;z-index:4;border-radius:25px;" id="cat">Select Category</button>
+                        <div class="content">
+                            <a href="Fulfilled.html" style="width:600px;border-radius:25px;">Fulfilled</a>
+                            <a href="Partially.html" style="border-radius:25px;"> Partially Fulfilled</a>
+                            <a href="Broken.html" style="border-radius:25px;" >Unfulfilled</a>
+                    </div>
+                    </div>
+</body>
+</html>

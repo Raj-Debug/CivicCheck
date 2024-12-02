@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    <body>
+        <style>
+            body{
+          background-image:url();
+          background-repeat:no-repeat;
+          background-size:cover;
+            }
+            </style>
+            <video autoplay muted loop id="myVideo" style="z-index:0;">
+              <source src="images/Topographic Textures _ After Effects _ Topographic Design _ Topographic Map  _ Background hd - Atomic Dreams (1080p, h264, youtube).mp4" type="video/mp4">
+            </video>
+            <head>
+              <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+              <script type="text/javascript">
+                google.charts.load("current", {packages:['corechart']});
+                google.charts.setOnLoadCallback(drawChart);
+                function drawChart() {
+                  var data = google.visualization.arrayToDataTable([
+                    ["Element", "Votes", { role: "style" } ],
+                    ["Kamaljeet Sehrawat(BJP)",842658, "#ffa500"],
+                    ["Mahabal Mishra(AAP)", 643645, "#add8e6"],
+                    ["NOTA",8699, "white"],
+                  ]);
+            
+                  var view = new google.visualization.DataView(data);
+                  view.setColumns([0, 1,
+                                   { calc: "stringify",
+                                     sourceColumn: 1,
+                                     type: "string",
+                                     role: "annotation" },
+                                   2]);
+            
+                  var options = {
+                    title:  " West Delhi Lok Sabha 2024",
+                    width:690,
+                    height: 400,
+                    bar: {groupWidth: "95%"},
+                    legend: { position: "none" },
+                  };
+                  var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+                  chart.draw(view, options);
+              }
+              </script>
+            </head>
+<div id="Delhi" style="z-index:0;">
+</div>
+<h1 style="font-family:rfont;z-index:1;position:fixed;top:52px;left:20px;color:darkred">Kamaljeet Sehrawat</h1>
+<pre style="font-family:afont;position:fixed;top:100px;left:20px;font-size:23px;">
+Constituency:<span class="texc">North West Delhi</span>
+Party:BJP
+
+Name Enrolled as Voter in:<span class="texc">34 Matiala (Delhi) 
+constituency, at Serial no 1118 in Part no 291</span>
+
+Self Profession:<span class="texc">Business
+(Abroad Education Consultant)</span>
+
+Assests and Liabilities
+Assets:<span class="texc">Rs 14,74,36,650 ~14 Crore+</span>
+Liabilities:Rs<span class="texc">Rs 1,18,57,294 ~1 Crore+</span>
+
+Education Details
+Category: <span class="texc">Post Graduate</span>
+<span class="texc">M.Com From Himachal Pradesh University,
+Shimla 1995.</span>
+
+Campaign Expenditure:<span class="texc">Rs 59,83,962 ~59 Lacs </span>
+Spouse Profession: <span class="texc">Consultant-Director-Genius Commercial & Education Institute Pvt. Ltd.</span>
+</pre>
+<img src="images/kswd.jpg" style="top:50px;position:fixed;z-index:1;height:300px;width:auto;left:1260px;top:100px;border-radius:25px;">
+<div id="columnchart_values" style="width: 900px; height: 300px;z-index:1;position: relative;left:520px;top:170px;"></div>
+<img src="images/case1.png" style="top:500px;left:1300px;z-index:1;position:fixed;height:150px;width:auto">
+<p style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;position:fixed;z-index:1;top:600px;left:1300px;font-size:20px;">Criminal Cases:0</p>
+
+        </body>
+        </html>
